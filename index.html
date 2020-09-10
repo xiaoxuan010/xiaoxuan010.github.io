@@ -9,29 +9,10 @@
         <h1>欢迎访问小轩010的个人站</h1>
         <h3>毕业纪念视频</h3>
         <iframe id='player1' src="//player.bilibili.com/player.html?aid=456604197&bvid=BV1Q5411a7Dq&cid=220656794&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-        <p id='closeTimeDp'></p>
+        <p id='closeTimeDp'>本网站托管于github,不会因服务器到期而关站doge</p>
     </body>
 
     <script>
-        setInterval(function(){
-            var closeTimeStr = "2020/10/7 00:00:00";
-            var closeTime = new Date(Date.parse(closeTimeStr));
-            var nowTime = new Date();
-            var timeLeft = (closeTime-nowTime)/1000;
-            var days = parseInt(timeLeft/86400);
-            timeLeft -= days*86400;
-            var hours = parseInt(timeLeft/3600);
-            timeLeft -= hours*3600;
-            var minutes = parseInt(timeLeft/60);
-            timeLeft -= minutes*60;
-            var seconds = parseInt(timeLeft);
-
-            var timeLeftStr = '距离关站还有'
-                            + days      + '天'
-                            + hours     + '小时'
-                            + minutes   + '分钟'
-                            + seconds   + '秒';
-            document.getElementById('closeTimeDp').innerHTML=timeLeftStr;
-        },1000)
+        setInterval(function(){});
     </script>
 </html>
